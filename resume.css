@@ -158,28 +158,41 @@ body{
     justify-content: center;
     list-style: none;
     margin-top: 15px;
-    
+}
 
+@media (max-width:768px){
+    #Education ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin-top: 15px;
+    }
 }
 #Education li{
     align-items: center;
     justify-self: center;
     justify-content: center;
-    height :auto ;
-    width :25% ;
+    /* height :auto ;
+    width :25% ; */
     margin:15px ;
     padding :10px ;
     border : 1px solid black ;
     border-radius: 4%;
     box-shadow: 0 0 50px 10px rgba(255, 255, 255, 0.7);
+    overflow-wrap: break-word;
 
 }
 
 #Education li h3{
     display: flex;
+
     justify-content: center;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
+    overflow-wrap: break-word;
+
 }
 
 #Skills, #Projects, #Contact{
